@@ -7,10 +7,10 @@ env:
   - name: MAX_CONNECTIONS
     value: '100'
 image:
-  imageName: us-central1-docker.pkg.dev/mobile-app-1-482109/demo-database/database:2-dev
+  imageName: us-central1-docker.pkg.dev/mobile-app-1-482109/demo-database/database:3-dev
   pullPolicy: IfNotPresent
   repository: us-central1-docker.pkg.dev/mobile-app-1-482109/demo-database/database
-  tag: 2-dev
+  tag: 3-dev
 replicaCount: 1
 resources:
   limits:
