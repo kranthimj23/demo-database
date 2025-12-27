@@ -1,0 +1,25 @@
+env:
+  demo_database:
+  - name: DB_NAME
+    value: demo_db
+  - name: ENVIRONMENT
+    value: dev
+  - name: MAX_CONNECTIONS
+    value: "100"
+image:
+  imageName: us-central1-docker.pkg.dev/mobile-app-1-482109/demo-database/database:1-dev
+  pullPolicy: IfNotPresent
+  repository: us-central1-docker.pkg.dev/mobile-app-1-482109/demo-database/database
+  tag: 1-dev
+replicaCount: 1
+resources:
+  limits:
+    cpu: 100m
+    memory: 512Mi
+  requests:
+    cpu: 100m
+    memory: 256Mi
+service:
+  port: 8080
+  type: ClusterIP
+serviceName: demo-database

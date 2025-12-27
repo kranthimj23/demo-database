@@ -1,0 +1,3 @@
+environment: dev
+db_name: demo_db
+max_connections: 100
