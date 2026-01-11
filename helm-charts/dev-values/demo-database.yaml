@@ -7,10 +7,10 @@ env:
   - name: MAX_CONNECTIONS
     value: '100'
 image:
-  imageName: us-central1-docker.pkg.dev/mobile-app-1-482109/demo-database/database:3-dev
+  imageName: asia-south1-docker.pkg.dev/cloudlearnhub-gke-1546/demo-database/database:1-dev
   pullPolicy: IfNotPresent
-  repository: us-central1-docker.pkg.dev/mobile-app-1-482109/demo-database/database
-  tag: 3-dev
+  repository: asia-south1-docker.pkg.dev/cloudlearnhub-gke-1546/demo-database/database
+  tag: 1-dev
 replicaCount: 1
 resources:
   limits:
